@@ -8,7 +8,7 @@ from tensorflow.keras.preprocessing.image import array_to_img
 from natsort import natsorted
 
 # create prediction set of images
-vid = 'VID_20210106_161152.mp4' # insert video name
+vid = 'video_path.mp4' # insert video path
 vid_folder = os.getcwd() + '\\' + vid.rpartition('.')[0] # create new folder path for the video frames
 if not os.path.exists(vid_folder): # create the new folder
     os.makedirs(vid_folder)
@@ -32,11 +32,11 @@ vid_images = np.reshape(vid_images, (tensor_shape))/255. # turn frames list to t
 
 #%% 
 # load the trained model
-json_file = open(r'D:\General_Projects\Autoencoders\autoencoder_models\ae_road_segmentation_3.json','r') # insert model JSON file path
+json_file = open(r'path_to_model.json','r') # insert model JSON file path
 model_json = json_file.read() 
 json_file.close()
 autoencoder = model_from_json(model_json)
-autoencoder.load_weights(r"D:\General_Projects\Autoencoders\autoencoder_models\ae_road_segmentation_3.h5") # insert model H5 file path
+autoencoder.load_weights(r"path_to_model.h5") # insert model H5 file path
 autoencoder.compile(loss='binary_crossentropy', optimizer='adam')
 
 #%%
