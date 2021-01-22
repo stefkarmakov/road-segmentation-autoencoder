@@ -1,8 +1,8 @@
 import cv2
 import os
 
-original_folder = 'D:\\General_Projects\\Autoencoders\\ADE20K_2016_07_26\\images\\training\\h\\highway' # insert folder containing highway/street data
-save_folder = 'D:\\General_Projects\\Autoencoders\\autoencoder_highway_color_data' # insert folder where cleaned and reshaped images will be stored
+original_folder = 'insert_folder_path_here' # insert folder containing highway/street data
+save_folder = 'insert_folder_path_here' # insert folder where cleaned and reshaped images will be stored
 new_img_size = 256
 for filename in os.listdir(original_folder):
     # change key markers for removing unneccesary images based on project
