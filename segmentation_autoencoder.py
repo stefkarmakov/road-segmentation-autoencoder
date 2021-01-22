@@ -20,8 +20,8 @@ training_images = []
 segmented_images = [] 
 folders = []
 # append folders containing original and segmented images 
-folders.append('drive/My Drive/Colab_Work/autoencoder_highway_rgb_data') # insert 
-folders.append('drive/My Drive/Colab_Work/autoencoder_street_rgb_data')
+folders.append('image_folder_path')  
+folders.append('image_folder_path')
 
 for each_folder in folders: 
   for filename in os.listdir(each_folder):
