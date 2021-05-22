@@ -1,4 +1,4 @@
-#road-segmentation-autoencoder
+# road-segmentation-autoencoder
 
 The following scripts use autoencoding to segment images from road and highway settings. The autoencoder is convolutional. The data that I used for training the model is the street and highway images from the MIT Scene Parsing Benchmark. 
 
