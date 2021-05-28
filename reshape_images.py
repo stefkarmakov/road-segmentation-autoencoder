@@ -1,8 +1,10 @@
 import cv2
 import os
 
-original_folder = 'insert_folder_path_here' # insert folder containing highway/street data
-save_folder = 'insert_folder_path_here' # insert folder where cleaned and reshaped images will be stored
+# insert folder containing highway/street data
+original_folder = 'path/to/street_data'
+# insert folder where cleaned and reshaped images will be stored
+save_folder = 'path/to/output_folder' 
 new_img_size = 256
 for filename in os.listdir(original_folder):
     # change key markers for removing unneccesary images based on project
