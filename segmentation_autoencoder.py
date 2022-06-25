@@ -20,8 +20,8 @@ training_images = []
 segmented_images = [] 
 folders = []
 # append folders containing original and segmented images 
-folders.append('image_folder_path')  
-folders.append('image_folder_path')
+folders.append('one_image_folder_path')  
+folders.append('another_image_folder_path')
 
 for each_folder in folders: 
   for filename in os.listdir(each_folder):
